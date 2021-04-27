@@ -1,36 +1,85 @@
+<!DOCTYPE html> 
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-}
+<html> 
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-</style>
-</head>
-<body>
+  
 
+<head> 
 
+    <title>full screen iframe</title> 
 
-<div class="container"> 
-  <iframe class="responsive-iframe" src="https://covid-india.org" allowfullscreen></iframe>
-</div>
+    <style type="text/css"> 
 
-</body>
-</html>
+        html { 
+
+            overflow: auto; 
+
+        } 
+
+          
+
+        html, 
+
+        body, 
+
+        div, 
+
+        iframe { 
+
+            margin: 0px; 
+
+            padding: 0px; 
+
+            height: 100%; 
+
+            border: none; 
+
+        } 
+
+          
+
+        iframe { 
+
+            display: block; 
+
+            width: 100%; 
+
+            border: none; 
+
+            overflow-y: auto; 
+
+            overflow-x: hidden; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+  
+
+<body> 
+
+    <iframe src="http://covid-india.org"
+
+            frameborder="0" 
+
+            marginheight="0" 
+
+            marginwidth="0" 
+
+            width="100%" 
+
+            height="100%" 
+
+            scrolling="auto"> 
+
+  </iframe> 
+
+  
+
+</body> 
+
+  
+
+</html> 
