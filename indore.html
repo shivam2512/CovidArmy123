@@ -1,11 +1,50 @@
 <html>
  <head>
-  
-<div class="iframe-container"><iframe loading="lazy" src="https://covid-india.org"></iframe></div>
+  .iframe-container {
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   padding-top: 100%;
+}
+.iframe-responsive {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   border: none;
+   margin: 0px;
+   padding: 0px;
+}
+.link-btn {
+   text-decoration: none;
+   background-color: black;
+   color: white;
+   padding: 6px 20px;
+   border-radius: 5px;
+   margin: 5px;
+}
 
   </head>
  <body>
-  <div class="iframe-container"><iframe loading="lazy" src="https://covid-india.org"></iframe></div>
+
+
+<div id="iframe_container" class="iframe-container">
+
+   <iframe 
+    id="1"
+    name="my_frame"
+    title="Title"
+    src="https://covid-india.org"
+    align="center"
+    scrolling="yes"   class="iframe-responsive"
+
+   ></iframe>
+
+</div>
+
 
   </body>
  </html>
