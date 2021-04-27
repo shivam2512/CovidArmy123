@@ -1,18 +1,2 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-   
-   $('#content').load("http://sarthak.nhmmp.gov.in/covid/test-result-status/");
-
-});
-</script>
-</head>
-<body>
-
-<div id="content"></div>
-
-</body>
-</html>
+<div id="testDiv"></div>
+<script>$("#testDiv").load("http://sarthak.nhmmp.gov.in/covid/test-result-status/");</script>
