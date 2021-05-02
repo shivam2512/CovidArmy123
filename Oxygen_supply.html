@@ -1,16 +1,16 @@
-<form action="https://docs.google.com/spreadsheets/d/1CU8oFvkfNKGjwy5soAuLtUjOhT6qo5tCcHLGjgMsAC4/edit#gid=0" method="POST" id="sheetdb-form">
-  Name: <input name="data[name]">
-  Email: <input name="data[mobile number]">
+<form action="https://docs.google.com/spreadsheets/d/1CU8oFvkfNKGjwy5soAuLtUjOhT6qo5tCcHLGjgMsAC4/edit#gid=0" method="POST" id="google-sheet">
+  Name: <input name="data[Name]">
+  Mobile Number: <input name="data[Mobile Number]">
   <button type="submit">Submit</button>
 </form>
 
 <script>
-  var form = document.getElementById('sheetdb-form');
+  var form = document.getElementById('google-sheet');
   form.addEventListener("submit", e => {
     e.preventDefault();
     fetch(form.action, {
         method : "POST",
-        body: new FormData(document.getElementById("sheetdb-form")),
+        body: new FormData(document.getElementById("google-sheet")),
     }).then(
         response => response.json()
     ).then((html) => {
