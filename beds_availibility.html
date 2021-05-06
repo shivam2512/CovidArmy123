@@ -289,9 +289,9 @@
 			 <link rel="stylesheet" href="http://sarthak.nhmmp.gov.in/covid/wp-content/themes/covid/pagination/style.css" type="text/css"> 
 			<div class="clearfix"></div>
 
-						<div class="col-md-6" style="text-align: left !important;padding-left:0px;"><strong>आगंतुक संख्या : 2034311</strong></div>
+					<!--	<div class="col-md-6" style="text-align: left !important;padding-left:0px;"><strong>आगंतुक संख्या : 2034311</strong></div>
              
-             <div class="col-md-6" style="text-align: right !important;padding-right:0px;"><strong>अंतिम अपडेट: 06 May, 2021 12:15:00</strong></div>
+             <div class="col-md-6" style="text-align: right !important;padding-right:0px;"><strong>अंतिम अपडेट: 06 May, 2021 12:15:00</strong></div> -->
 
 		</section>
 		<!-- <div id="results_pagination">
@@ -299,7 +299,7 @@
 	      <div id="paging"></div>
 		</div> -->
 
-<section class="wrapper-tbl" style="margin-bottom: 20px;">
+<!-- <section class="wrapper-tbl" style="margin-bottom: 20px;">
 			
             
 		<table class="table table-bordered table-striped hospital-status">
@@ -1537,7 +1537,7 @@ showing 1 to 20 of total 993 Records
 	
        <!-- <P><small><b>DESCLAIMER:</b> gfdgdg djgdg dgdgdflg dlgdjkl gdfjlgdfgldfg dgldfgj dgld jldfgnd jgdfg dgl dgkld l dgnjdklg dfgj </small></P>  -->   
      
-</section>
+</section> -->
     </div>
 </div>
 
@@ -1579,7 +1579,7 @@ jQuery(document).ready(function(){
 	});
 	/* PDF */
 	jQuery('#excelButton').on('click',function(){
-		jQuery("#excelButton").prop( "disabled", true );
+		jQuery("#excelButton").prop( "enabled", true );
 		var district_id = jQuery("#district_id option:selected").val(); 	
 		var facility_type = jQuery(".facclass option:selected").val(); 	
 		var facility_org_type = jQuery("#facility_org_type_id option:selected").val(); 	
@@ -1622,7 +1622,7 @@ jQuery(document).ready(function(){
     }
     function downloadExcel( district, facility_type, facility) {
     	
-    	var excel_url = "http://sarthak.nhmmp.gov.in/covid/wp-content/themes/covid/facilities_occupancy_pdf.php?"+"district_id="+district+"&facility_org_type="+facility_type+"&facility="+facility;
+    	var excel_url = "http://sarthak.nhmmp.gov.in/covid/wp-content/themes/covid/facilities_occupancy_excel.php?"+"district_id="+district+"&facility_org_type="+facility_type+"&facility="+facility;
     	
     	window.open(excel_url, '_blank');
     	return false;
