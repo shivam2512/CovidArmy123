@@ -76,7 +76,18 @@
         <div class="row mb-5">
           <div class="col-lg-7 mx-auto text-center"> <!-- Real Time Automatic Update in Every 5 Mins, Based On Availibility -->
             <h2 class="mb-4 section-heading" align="center">Covid Help & Support - Beds Availibility Reports <br><br><font color="green">(Real Time Automatic Data Update)</font></h2>
-            </div>
+          <script type="text/javascript">
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+  
+  document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+
+  </script>  
+</div>
         </div>
         
        <center> 
