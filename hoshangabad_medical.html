@@ -1,155 +1,21 @@
-﻿<!doctype html>
-<html lang="en">
-
-<!-- Mirrored from covid-india.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Apr 2021 16:15:02 GMT -->
+<html>
 <head>
-  <title>List Of Medicine Suppliers - Hoshangabad</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&amp;display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-  <link rel="stylesheet" href="fonts/flaticon-covid/font/flaticon.css">
-
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+  <title>Display Current Date and Time in Html using Javascript</title>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<body>
+  <h1>Get current date using JavaScript.</h1>
 
-
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-    
-  
-
-
-    <div class="site-section bg-primary-light">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-7 mx-auto text-center">
-            <h2 class="mb-4 section-heading">List Of Medicine Suppliers - Hoshangabad</h2>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <div class="symptom d-flex">
-            1.  Akshat Medical<br>
-Address: Sarata Chowk, Hoshangabad, Main road, Hoshangabad H.O – 461001 <br>
-Phone: 9425039933<br> <br>
-              
-              
-
-2. Ashirwad Medical Store <br>
-Address: Near Government high school, 125 hoshangabad road seoni malwa, hoshangabad – 461221 <br>
-Phone: 7574-220499 <br><br>
-
-3. Jalkhere Chemist<br>
-Address: Jail Road, Seoni Malva, Seoni Malwa, Hoshangabad – 461223<br>
-Phone: 8871136505<br><br>
-
-4. Patel Medico<br>
-Address: Main road, Hoshangabad H.O, Hoshangabad – 461001<br>
-Phone: 9827539156, 7574-253048<br><br>
-          <!--      <div class="img">
-              <img src="images/plasma.png" alt="Image" class="img-fluid"> 
-              </div> -->
-          <!--    <div class="text">
-                <a href="https://forms.gle/NQVgBDnUxr3tGJWx9"><h3>Recovered From Covid, Donate Plasma And Save Life</h3></a>
-               </div> -->
-            </div>
-          </div>
-       <!--   <div class="col-lg-6 mb-4">
-            <div class="symptom d-flex">
-              <div class="img">
-                <img src="images/plasma.png" alt="Image" class="img-fluid">
-              </div> 
-              <div class="text">
-<h3><font color="red"><b>For Any Type Of Covid Related Help In Khandwa:<br><br> 9039584732<br> <br>7389802921<br> <br>7748908393</b></font></h3>             </div>
-            </div>
-          </div> -->
-         
-          <div class="row text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p class="copyright"><small>
-                
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All Rights Reserved | Developed For Humanity <i class="icon-heart text-danger" aria-hidden="true"></i> Shivam
-                 </small></p>
-                
-               
-
-              </div>
-            </div>
-
-          </div>
-         
-
-          
-          
-        
-    
-  
-
-  </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-
-
-  <script src="js/main.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-50V91MGNSQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-50V91MGNSQ');
-</script>
-
+  <h2 id="displayDateTime"></h2>
 </body>
+  <script type="text/javascript">
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+' '+time;
+  
+  document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
 
-<!-- Mirrored from covid-india.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Apr 2021 16:16:40 GMT -->
+  </script>
 </html>
-
-
