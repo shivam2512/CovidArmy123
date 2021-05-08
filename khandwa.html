@@ -69,7 +69,7 @@
               <img src="images/plasma.png" alt="Image" class="img-fluid">
               </div>
               <div class="text">
-<h3 align="center"><b><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5QtZA_sH6nmTEr9ZT0PqpTDTicROqkeSzKdWZeKX3lsnFdhrS26nnkg1W6vskdFQqYMclQkx6vINb/pub?gid=0&single=true&output=pdf"><marquee><font color="red"><i>NEW</i></font></marquee><br><br>Bed Availibility Report - Khandwa District <br><br>[04/05/2021]<br><br> (Automatic Update In Every 5 Mins.) </a></b></h3>             </div>
+<h3 align="center"><b><a href="https://sarthak.nhmmp.gov.in/covid/wp-content/themes/covid/facilities_occupancy_excel.php?district_id=20&facility_org_type=0&facility=0"><marquee><font color="red"><i>NEW</i></font></marquee><br><br>Bed Availibility Report - Khandwa District <br><br><b> <font color="red"> Data Last Updated:</font>  <b/><br><b> <font color="red"> <div id="displayDateTime"></div></font>  </b><br><br> (Automatic Update In Every 5 Mins.) </a></b></h3>             </div>
             </div>
           </div> 
           
@@ -146,6 +146,20 @@
   gtag('config', 'G-50V91MGNSQ');
 </script>
 
+          <!-- timer and date script-->
+          <script type="text/javascript">
+  var today = new Date();
+  var day = today.getDay();
+  var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+  <!--var date = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();-->
+var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date+', '+time;
+  
+  document.getElementById("displayDateTime").innerHTML = dateTime + ', ' + daylist[day];
+
+  </script> 
+          
 </body>
 
 <!-- Mirrored from covid-india.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Apr 2021 16:16:40 GMT -->
